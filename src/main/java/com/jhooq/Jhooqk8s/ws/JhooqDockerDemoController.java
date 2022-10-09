@@ -8,6 +8,6 @@ public class JhooqDockerDemoController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello -gyan Jhooq-k8s i Have updated the message";
+        return "Hello -gyan this is latest CLI version";
     }
 }
