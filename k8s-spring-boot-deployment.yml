@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jhooq-springboot
+  name: github-application
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: jhooq-springboot
+      app: github-application
   template:
     metadata:
       labels:
-        app: jhooq-springboot
+        app: github-application
     spec:
       containers:
-        - name: springboot
+        - name: github-springboot
           image: gyandoc/jhooq-docker-demo:jhooq-docker-demo
           ports:
             - containerPort: 8080
@@ -31,4 +31,4 @@ spec:
     - port: 80
       targetPort: 8080
   selector:
-    app: jhooq-springboot
+    app: github-springboot
