@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jhooq-springboot
+  name: Github-LoadBalancer
 spec:
   type: LoadBalancer
   ports:
